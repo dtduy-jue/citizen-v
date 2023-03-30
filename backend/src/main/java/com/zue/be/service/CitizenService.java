@@ -53,7 +53,7 @@ public class CitizenService {
 
     public CitizenDto createCitizen(Map<String, Object> JSONInfoAsMap) {
 
-        boolean isAllPropertiesFound = JSONInfoAsMap.containsKey("id") &&
+        /*boolean isAllPropertiesFound = JSONInfoAsMap.containsKey("id") &&
                 JSONInfoAsMap.containsKey("name") &&
                 JSONInfoAsMap.containsKey("sex") &&
                 JSONInfoAsMap.containsKey("dob") &&
@@ -98,7 +98,7 @@ public class CitizenService {
             repository.save(newCitizen);
             logger.trace("citizenCreated");
             return mapper.map(newCitizen, CitizenDto.class);
-        }
+        }*/
         return null;
     }
 
@@ -159,14 +159,17 @@ public class CitizenService {
     }
 
     public List<Population> getPopulationListGroupByProvince() {
-        return repository.getPopulationGroupByProvince();
+//        return repository.getPopulationGroupByProvince();
+        return null;
     }
 
     public List<Population> getPopulationListGroupByDistrict() {
-        return repository.getPopulationGroupByDistrict();
+//        return repository.getPopulationGroupByDistrict();
+        return null;
     }
 
     public List<Population> getPopulationListGroupByWard() {
-        return repository.getPopulationGroupByWard();
+//        return repository.getPopulationGroupByWard();
+        return null;
     }
 }

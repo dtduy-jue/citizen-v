@@ -12,7 +12,7 @@ import java.util.List;
 public interface CitizenRepository extends JpaRepository<Citizen, String> {
     List<Citizen> findAll();
 
-    @Query("SELECT new com.zue.be.entity.custom.Population(p.name, COUNT(id)) " +
+    /*@Query("SELECT new com.zue.be.entity.custom.Population(p.name, COUNT(id)) " +
             "FROM Citizen c join Province p on p.code = c.province.code " +
             "GROUP BY c.province.code")
     List<Population> getPopulationGroupByProvince();
@@ -25,5 +25,5 @@ public interface CitizenRepository extends JpaRepository<Citizen, String> {
     @Query("SELECT new com.zue.be.entity.custom.Population(w.name, COUNT(id)) " +
             "FROM Citizen c join Ward w on w.code = c.ward.code " +
             "GROUP BY c.ward.code")
-    List<Population> getPopulationGroupByWard();
+    List<Population> getPopulationGroupByWard();*/
 }

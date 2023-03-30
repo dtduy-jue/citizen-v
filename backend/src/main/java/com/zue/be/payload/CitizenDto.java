@@ -9,9 +9,17 @@ import java.time.LocalDate;
 public class CitizenDto {
     private String id;
     private String name;
-    private String sex;
     @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate dateOfBirth;
+    private String sex;
+    private String maritalStatus;
+    private String ethnic;
+    private String otherNationality;
+    private String religion;
+    private CitizenDto father;
+    private CitizenDto mother;
+    private CitizenDto marriagePartner;
+    private CitizenDto legalRepresentative;
     private ProvinceDto province;
     private DistrictDto district;
     private WardDto ward;
