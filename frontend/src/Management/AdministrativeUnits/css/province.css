@@ -1,0 +1,142 @@
+.buttonIcon {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.buttonAdd {
+    float: right;
+    width: 20%;
+    max-width: 240px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tableResidential {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 2px solid grey;
+}
+
+thead {
+    background-color: #3F72AF;
+    color: white;
+    font-size: 14px;
+    border: 2px solid grey;
+    height: 1cm;
+}
+
+td {
+    background-color: azure;
+    font-size: 14px;
+    font-weight: bold;
+    height: 1cm;
+}
+
+.headerModal {
+    background-color: #B9B9B9;
+}
+
+.titleModal {
+    font-size: 16px;
+    font-weight: 600;
+    color: blakc;
+}
+
+.tableInfo {
+    width: 80%;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    margin-top: 0px;
+}
+
+.note {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+Label {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.rowTable:active {
+    background-color: yellow;
+}
+
+.panigation {
+    position: fixed; 
+    bottom:0%;
+    width:100%;
+    text-align: center;
+    align-items: center;
+    background-color: #6093d0;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.page {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.pageNumber {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.page:hover {
+    background-color: #3F72AF;
+}
+
+.noteWarning {
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.checked {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.iconChecked {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px
+}
+
+.checked:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.warningChecked {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.successChecked {
+    color: rgb(5, 164, 50);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}

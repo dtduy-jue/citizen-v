@@ -1,0 +1,91 @@
+.flex_citizen_3 {
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flex_citizen_second {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flex_citizen {
+    width: 35%;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.titleCitizen {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.countCitizen {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.tableResidentialHamlet {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.returnShow {
+    margin-left: 50px;
+}
+
+.titleTree {
+    font-weight: bold;
+}
+
+.listProvinces {
+    margin-top: 10px;
+}
+
+.listUnits {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.unit {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.province {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.province:hover {
+    cursor: pointer;
+}
+
+#detailed-resident-info-header {
+    display: flex;
+    margin: 10px;
+}
+
+#detailed-resident-info-title {
+    margin: 0 0 0 20px;
+}
+
+.detailed-resident-info-table {
+    border: 4px solid aqua;
+    margin-left: 20px;
+}
+
+.detailed-resident-info-table .row-head {
+    width: 15vw;
+}
+
+.logoCitizen {
+    max-width: 300px;
+    width: 90%
+}
