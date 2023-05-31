@@ -64,31 +64,6 @@ public class Citizen {
 //    @EqualsAndHashCode.Exclude
     private List<Association> associations;
 
-    public Religion getReligion() {
-        return religion == null ? new Religion(0, Utils.NONE) : religion;
-    }
-
-    public String getOtherNationality() {
-        return otherNationality == null ? "" : otherNationality;
-    }
-
-    /*public Ethnicity getEthnicity() {
-        return ethnicity == null ? new Ethnicity(0, Utils.NONE) : ethnicity;
-    }*/
-
-    public String getJob() {
-        return job == null ? "Không xác định" : job;
-    }
-
-    public String getBloodType() {
-        return bloodType == null ? "Không xác định" : bloodType;
-    }
-
-    public String getEducationalLevel() {
-        return educationalLevel == null ? "Không" : educationalLevel;
-    }
-//    @Override
-
     @Override
     public String toString() {
         return "Citizen{" +
@@ -107,15 +82,4 @@ public class Citizen {
                 ", educationalLevel='" + educationalLevel + '\'' +
                 '}';
     }
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-//        Citizen citizen = (Citizen) o;
-//        return id != null && Objects.equals(id, citizen.id);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return getClass().hashCode();
-//    }
 }

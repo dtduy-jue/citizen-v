@@ -230,7 +230,8 @@ public class StatisticsServiceImpl implements StatisticsService {
                     addressesForPopulationCount) {
                 Citizen currentCitizen = currentAddress.getCitizen();
                 Object currentName = method.invoke(currentCitizen);
-                result.stream().filter(population -> population.getName().equals(currentName.toString())).findFirst().ifPresentOrElse(currentPopulation -> currentPopulation.increasePopulation(1L), () -> result.add(new PopulationDto(currentName.toString(), 1L)));
+                String currentCitizenPropertyCategoryName = currentName == null ? Utils.NONE : currentName.toString();
+                result.stream().filter(population -> population.getName().equals(currentCitizenPropertyCategoryName)).findFirst().ifPresentOrElse(currentPopulation -> currentPopulation.increasePopulation(1L), () -> result.add(new PopulationDto(currentCitizenPropertyCategoryName, 1L)));
             }
             return result;
         } catch (SecurityException | NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
